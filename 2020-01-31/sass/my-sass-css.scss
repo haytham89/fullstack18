@@ -1,0 +1,116 @@
+@import "./my_vars";
+
+
+@mixin hebrewElement {
+    color: blue;
+    text-align: right;
+    direction: rtl;
+}
+
+@mixin englishElement {
+    color: red;
+    text-align: left;
+    direction: ltr;
+}
+
+/* Or more practical */
+@mixin englishHebrewElement( $direction, $alignment, $color ) {
+    color:$color;
+    text-align: $alignment;
+    direction: $direction;
+}
+
+
+div {
+    color: $mainTextColor;
+    border: $thinBorder;
+}
+
+
+p {
+    color: $mainTextColor;
+    border: $mediumBorder;
+}
+
+
+h1 {
+    color: $mainTextColor;
+    border: $thickBorder;
+}
+
+
+li {
+    
+    margin-bottom: 20px;
+
+    a {
+        font-weight: bold;
+        &:hover {
+            color: green;
+        }
+    }
+}
+
+.my-hebrew-descriotion {
+    @include hebrewElement();
+}
+
+.my-hebrew-text {
+    @include englishHebrewElement( rtl, right, red );
+}
+
+.my-english-text {
+    @include englishHebrewElement( ltr, left, blue );
+}
+
+
+
+
+
+
+
+@mixin shadow( $from_top, $from_left, $spread, $start_from, $color, $width, $height  ) {
+    box-shadow: $from_top $from_left $spread $start_from $color;  
+    width: $width;  
+    height: $height;  
+    margin: 50px auto;
+}
+
+.shadow {
+    @include shadow( 2px, 2px, 10px, 1px, #090, 200px, 200px );
+}
+
+@mixin langaugae( $the_language  ) {
+
+    @if $the_language == hebrew {
+        color: purple;
+        font-size: 30px;
+      } 
+
+      @if $the_language == english {
+        color: pink;
+        font-size: 40px;
+      }
+
+      @if $the_language == german {
+        color: red;
+        font-size: 40px;
+      }
+      
+      
+    
+}
+
+.hebrew-text {
+    @include langaugae( hebrew ); 
+}
+
+
+.english-text {
+    @include langaugae( english ); 
+}
+
+.german-text {
+    @include langaugae( german ); 
+}
+

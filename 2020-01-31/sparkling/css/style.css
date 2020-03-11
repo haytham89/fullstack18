@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+
+.nav {
+    float: right;
+    background-color: #363636;
+}
+
+.nav ul {
+    list-style-type: none;
+}
+
+
+.nav li {
+    float: left;
+}
+
+.nav li a {
+    display: block;
+    padding: 10px 30px;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.nav ul ul {
+    display: none;
+    position: absolute;
+    background-color: #363636;
+}
+
+.nav ul ul li {
+    float: none;
+}
+
+.nav ul li a:hover + ul {
+    display: block;
+}

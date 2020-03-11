@@ -1,0 +1,129 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Arial;
+	box-sizing: border-box;
+}
+
+h1 ~ p {
+	color: red;
+}
+
+h1 + p {
+	color: green;
+}
+
+#second-div {
+	margin: 100px;
+}
+
+/*#second-div p:nth-child(2)  {
+	color: blue;
+	
+}*/
+
+#second-div p:nth-child(4n)  {
+	color: blue;
+	
+}
+
+.clear {
+    clear: both;
+}
+
+#third-div p:not(.no-color)  {
+	color: blue;
+	
+}
+
+#third-div::after {
+     content: "Hello";
+}
+
+#my-box {
+	width: 100px;
+	height: 100px;
+	margin: 50px auto;
+	background-color: #ddd;
+    box-shadow: 2px 2px 3px 5px rgba(0,0,0,0.5);
+
+}
+
+#my-box img {
+    opacity: 0.5;
+}
+
+#my-transform {
+   float: left;
+    /* transform: rotate(30deg);
+    transform: scale(1.5);
+    transform: translate(50px, 100px);*/
+    transform: rotate(30deg) scale(1.5) translate(350px, 100px);
+}
+
+
+#my-transform img {
+    width: 100px;
+}
+
+
+#my-transition {
+    float: left;
+    width: 100px;
+    height: 100px;
+    background-color: #f00;
+    opacity: 1;
+    transition: all 2s ease;
+}
+
+#my-transition:hover {
+    width: 150px;
+    height: 50px;
+    background-color: #0f0;
+    opacity: 0.5;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+#gallery {
+    margin: 50px auto;
+}
+
+#gallery img {
+    float: left;
+    width: 20%;
+}
+
+
+@media screen and (max-width: 400px) {
+
+    h1 {
+        font-size: 20px;
+    }
+    
+    #gallery img {
+        float: none;
+        width: 70%;
+        display: block;
+        margin: 10px auto;
+    }
+}    
+
+/*
+Mobile phones
+@media only screen and (max-width: 600px) 
+
+Large phones and tablets
+@media only screen and (min-width: 600px) 
+
+Medium devices - landscape tablets
+@media only screen and (min-width: 768px) Laptops & desktops@media only screen and (min-width: 992px)
+
+Large laptops and desktops
+@media only screen and (min-width: 1200px) 
+*/
+
+
+

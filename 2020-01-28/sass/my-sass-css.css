@@ -1,0 +1,23 @@
+div {
+  color: #00f;
+  border: 1px solid black;
+}
+
+p {
+  color: #00f;
+  border: 5px solid black;
+}
+
+h1 {
+  color: #00f;
+  border: 10px solid black;
+}
+
+li {
+  margin-bottom: 20px;
+}
+
+li a {
+  font-weight: bold;
+}
+/*# sourceMappingURL=my-sass-css.css.map */
