@@ -1,0 +1,34 @@
+@font-face {
+  font-family: 'Arimo', sans-serif;
+  src: url(some_url_local_or_remote_to_arimo_fonts.woff2);
+}
+
+p {
+  font-family: Arimo;
+}
+
+
+
+
+
+
+/* OR  */
+@import url('https://fonts.googleapis.com/css?family=Arimo&display=swap');
+
+p {
+  font-family: Arimo;
+}
+
+
+
+
+
+
+
+/* 
+OR: Put this in the HTML 
+<link href="https://fonts.googleapis.com/css?family=Arimo&display=swap" rel="stylesheet">
+*/
+p {
+  font-family: Arimo;
+}

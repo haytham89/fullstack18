@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>6 - Padding</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="bootstrap-4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<style type="text/css">
+
+.row div:nth-child(odd) {
+	background-color: #f81307;
+	height: 8em;
+}
+
+.row div:nth-child(even) {
+	background-color: #02d1fd;
+	height: 8em;
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+	<div class="row">						<!-- Add no-gutters for no padding or margin -->
+		<div class="col-4 p-1">
+			Put your content here
+		</div>
+		<div class="col-4 pt-3">
+			Or here
+		</div>
+		<div class="col-4 px-5">
+			Or here
+		</div>
+	</div>
+</div>
+<pre>
+
+From: https://getbootstrap.com/docs/4.3/utilities/spacing/
+
+The classes are named using the format {property}{sides}-{size} for xs and {property}{sides}-{breakpoint}-{size} for sm, md, lg, and xl.
+
+The classes are named using the format {property}{sides}-{size} for xs and {property}{sides}-{breakpoint}-{size} for sm, md, lg, and xl.
+
+Where property is one of:
+
+    m - for classes that set margin
+    p - for classes that set padding
+
+Where sides is one of:
+
+    t - for classes that set margin-top or padding-top
+    b - for classes that set margin-bottom or padding-bottom
+    l - for classes that set margin-left or padding-left
+    r - for classes that set margin-right or padding-right
+    x - for classes that set both *-left and *-right
+    y - for classes that set both *-top and *-bottom
+    blank - for classes that set a margin or padding on all 4 sides of the element
+
+Where size is one of:
+
+    0 - for classes that eliminate the margin or padding by setting it to 0
+    1 - (by default) for classes that set the margin or padding to $spacer * .25
+    2 - (by default) for classes that set the margin or padding to $spacer * .5
+    3 - (by default) for classes that set the margin or padding to $spacer
+    4 - (by default) for classes that set the margin or padding to $spacer * 1.5
+    5 - (by default) for classes that set the margin or padding to $spacer * 3
+    auto - for classes that set the margin to auto
+
+</pre>
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="bootstrap-4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

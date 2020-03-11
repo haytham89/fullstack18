@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.5,  minimum-scale=1, user-scalable=yes">
+<meta charset="UTF-8">
+<title>Title</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<style>
+</style>
+</head>
+<body>
+
+<h1>Workers</h1>
+<div class="container">
+	<div class="row">
+		 <div class="col-md-8">
+		 	<h2>Workers list</h2>
+		 	<div class="workers_table border rounded p-1">
+		 	</div>
+		 </div>
+		  <div class="col-md-4">
+		  	<form action="" method="post" onSubmit="return add_new_worker()">
+				<div class="form-group">
+                    <label>Name:</label>
+                    <input type="text" required name="worker_name" id="worker_name" placeholder="Workers name" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label>Phone:</label>
+                    <input type="number" required name="worker_phone" id="worker_phone" placeholder="Workers phone" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label>Email:</label>
+                    <input type="email" required name="worker_email" id="worker_email" placeholder="Workers email" class="form-control" />
+                </div>
+                <input type="submit" class="btn btn-success" value="Add worker">
+	  		</form>
+		 </div>
+	</div>
+</div>
+<!--<script src="scripts.js"></script>-->
+<script src="scripts_dom.js"></script>
+</body>
+</html>
