@@ -1,0 +1,50 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Arial;
+	box-sizing: border-box;
+}
+
+h1 ~ p {
+	color: red;
+}
+
+h1 + p {
+	color: green;
+}
+
+#second-div {
+	margin: 100px;
+}
+
+/*#second-div p:nth-child(2)  {
+	color: blue;
+	
+}*/
+
+#second-div p:nth-child(4n)  {
+	color: blue;
+	
+}
+
+
+
+#third-div p:not(.no-color)  {
+	color: blue;
+	
+}
+
+#third-div::after {
+     content: "Hello";
+}
+
+#my-box {
+	width: 100px;
+	height: 100px;
+	margin: 50px auto;
+	background-color: #ddd;
+    box-shadow: 2px 2px 3px 5px rgba(0,0,0,0.5);
+
+}
+
+

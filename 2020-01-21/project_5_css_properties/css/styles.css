@@ -1,0 +1,115 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Arial", "Times new roman";
+}
+
+.clear {
+	clear: both;
+}
+
+body {
+	padding: 30px;
+	padding-bottom: 330px;
+}
+
+
+h1 {
+	color: red;
+	font-size: 20px;
+	font-style: italic;
+	font-weight: bold;
+	
+}
+
+a {
+	/*text-decoration: none;*/
+	text-decoration: underline;
+	text-decoration: line-through;
+}
+
+p {
+	line-height: 34px;
+}
+
+ul {
+	list-style-type: none;
+}
+
+#menu li {
+	height: 50px;
+	border-left: 1px solid black;
+	margin-bottom: 20px;
+	padding-left: 20px;
+}
+
+
+#menu li a {
+	line-height: 49px;
+}
+
+#just-text-english {
+	text-align: left;
+	direction: ltr;
+}
+
+
+#just-text-hebrew {
+	text-align: right;
+	direction: rtl;
+}
+
+#adjusting {
+	background-color: black;
+	margin: 0 auto;
+	height: 300px;
+	width: 100%;
+	max-width: 900px;
+}
+
+
+#divs-container {
+	background-color: yellow;
+}
+
+
+#divs-container div {
+	width: 100px;
+	height: 100px;
+	background-color: green;
+	padding: 15px 15px 20px 30px;
+	margin: 20px;
+	/*
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	*/
+	float:left;
+}
+
+#divs-container div:first-child {
+	padding: 0px;
+}
+
+#divs-container div:last-child {
+	
+	width: 300px;
+	height: 300px;
+	border: 3px solid brown;
+	border-radius: 10px;
+	/*display: none;*/
+	float: right;
+	background: red url('../images/tree.jpg') left top repeat-x;
+
+
+}
+
+
+
+
+
+
+
+
+

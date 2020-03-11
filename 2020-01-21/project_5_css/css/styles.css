@@ -1,0 +1,90 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: arial;
+}
+
+body {
+	padding: 30px;
+	padding-bottom: 330px;
+}
+
+div {
+	font-size: 33px;
+	color: red;
+}
+
+p {
+	font-size: 13px;
+}
+
+li.my-li {
+	color: blue;
+	font-size: 33px;
+	margin: 20px;
+}
+
+#my-special-li {
+	color: yellow;
+	font-size: 23px;
+}
+
+.img-container p img {
+	width: 300px;
+}
+
+span, p.green {
+	color: green;
+}
+
+div[data-my-attr] {
+	font-size: 30px;
+}
+
+
+div[data-my-attr='3'] {
+	font-size: 20px;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+a:hover {
+	color: red;
+}
+
+a:visited {
+	/*color: blue;*/
+}
+
+/*
+.img-container p img:hover {
+	width: 50px;
+}
+*/
+
+.my-second-menu a:first-child,
+.my-second-menu a:last-child {
+	font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
